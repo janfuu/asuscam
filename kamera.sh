@@ -5,3 +5,4 @@ if [ "$1" == "start" ]; then
     systemctl --user start kamera.service
 else
     systemctl --user stop kamera.service
+fi
