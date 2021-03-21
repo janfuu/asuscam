@@ -12,6 +12,9 @@ cp ./v4l2loopback.conf /etc/modprobe.d/v4l2loopback.conf
 echo "starting loopback module"
 modprobe v4l2loopback
 
+echo "setting ACL on loopback video"
+setfacl -m u:schule:rw /dev/video7
+
 echo "updating the initrd"
 update-initramfs -u 
 
