@@ -3,7 +3,7 @@
 ### Must be run as root ###
 
 echo "installing packages"
-apt-get install v4l2loopback-dkms v4l2loopback-util ffmpeg
+apt-get install -y v4l2loopback-dkms v4l2loopback-util ffmpeg
 
 echo "installing v4l2loopback module"
 echo "v4l2loopback" > /etc/modules-load.d/v4l2loopback.conf
