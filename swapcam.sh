@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ["$1" == "-r"]; then
+if [ "$1" == "-r" ]; then
     # switch back
     mv /dev/video0 /dev/video7
     mv /dev/video9 /dev/video0
