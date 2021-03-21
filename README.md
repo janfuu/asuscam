@@ -1,5 +1,6 @@
 # Scripts to flip webcam on Asus notebooks
 - Meant for the heyalter project, currently only works on ubuntu. Not really tested yet.
+- Note: kernel must be up-to-date, or installation of v4l2loopback-dkms will fail
 
 ## Usage ##
 - clone repository
