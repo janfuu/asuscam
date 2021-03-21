@@ -1,0 +1,9 @@
+[Unit]
+Description=Make v4l2loopback default camera on /dev/video0
+
+[Service]
+ExecStart=/etc/swapcam.sh
+ExecStop=/etc/swapcam.sh -r
+
+[Install]
+WantedBy=graphical.target
