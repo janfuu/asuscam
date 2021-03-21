@@ -2,7 +2,7 @@
 Description=Copy and flip camera to virtual camera
 
 [Service]
-ExecStart=ffmpeg -f v4l2 -i /dev/video9 -vf "vflip" -f v4l2 /dev/video0 -loglevel error
+ExecStart=/usr/bin/ffmpeg -f v4l2 -i /dev/video9 -vf "vflip" -f v4l2 /dev/video0 -loglevel error
 ExecStop=killall ffmpeg
 
 [Install]
