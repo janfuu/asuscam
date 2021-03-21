@@ -2,6 +2,7 @@
 Description=Make v4l2loopback default camera on /dev/video0
 
 [Service]
+Type=OneShot
 ExecStart=/etc/swapcam.sh
 ExecStop=/etc/swapcam.sh -r
 
