@@ -13,8 +13,8 @@ echo "updating the initrd"
 update-initramfs -u 
 
 echo "installing swapcam script to /etc/swapcam"
-chmod a+x ./swapcam.sh 
 cp swapcam.sh /etc/swapcam.sh 
+chmod a+x /etc/swapcam.sh 
 
 echo "Installing swapcam.service"
 cp swapcam.service /etc/systemd/system/swapcam.service
