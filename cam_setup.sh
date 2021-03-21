@@ -9,6 +9,9 @@ echo "installing v4l2loopback module"
 echo "v4l2loopback" > /etc/modules-load.d/v4l2loopback.conf
 cp ./v4l2loopback.conf /etc/modprobe.d/v4l2loopback.conf
 
+echo "starting loopback module"
+modprobe v4l2loopback
+
 echo "updating the initrd"
 update-initramfs -u 
 
