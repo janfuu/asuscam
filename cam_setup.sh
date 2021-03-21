@@ -9,6 +9,9 @@ echo "installing v4l2loopback module"
 echo "v4l2loopback" > /etc/modules-load.d/v4l2loopback.conf
 cp ./v4l2loopback.conf /etc/modprobe.d/v4l2loopback.conf
 
+echo "updating the initrd"
+update-initramfs
+
 echo "installing swapcam script to /etc/swapcam"
 chmod a+x ./swapcam.sh 
 cp swapcam.sh /etc/swapcam.sh 
