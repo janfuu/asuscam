@@ -1,4 +1,5 @@
 # Scripts to flip webcam on Asus notebooks
+- Meant for the heyalter project, currently only works on ubuntu. Not really tested yet.
 
 ## Usage ##
 - clone repository
