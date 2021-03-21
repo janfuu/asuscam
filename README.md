@@ -3,5 +3,5 @@
 
 ## Usage ##
 - clone repository
-- run camsetup.sh as root to install packages, insert modules and setup the swapcam.service systemd unit.
+- run cam_setup.sh as root to install packages, insert modules and setup the swapcam.service systemd unit.
 - run kamera.sh as user to start ffmpeg
